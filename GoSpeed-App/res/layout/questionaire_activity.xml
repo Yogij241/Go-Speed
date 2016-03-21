@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/table_Layout"
+                android:layout_margin="6dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/welcome_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:singleLine="true"
+                    android:text="Welcome"
+                    android:textColor="@color/Orange"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/table_Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/logoIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/gospeedlogo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/table_Layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/welcome" >
+
+                <TextView
+                    android:id="@+id/questionaire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="3dp"
+                    android:text="Please rate your device"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/table_Layout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/questionaire"
+                    android:layout_centerHorizontal="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/question1"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/question_bg"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/questionaire1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="32dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="2dp"
+                            android:maxLines="2"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <RatingBar
+                            android:id="@+id/getRating"
+                            style="@style/customRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/questionaire1"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="1dp"
+                            android:stepSize="1" />
+
+                        <!--
+                     <RatingBar
+                    android:id="@+id/getRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/ratingBarHeigh"
+                    android:layout_below="@+id/questionaire1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/custom_ratingbar_selector"
+                    android:stepSize="1" />
+                        -->
+
+                        <TextView
+                            android:id="@+id/rateing1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/questionaire1"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="0/5"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/countText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/getRating"
+                            android:layout_toRightOf="@+id/setRating"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="vbfhbvfhbvf"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/question2"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/question1"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/question_bg"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/questionaire2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="32dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="2dp"
+                            android:maxLines="2"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <RatingBar
+                            android:id="@+id/getRating2"
+                            style="@style/customRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/questionaire2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="1dp"
+                            android:stepSize="1" />
+
+                        <!--
+                     <RatingBar
+                    android:id="@+id/getRating2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/ratingBarHeigh"
+                    android:layout_below="@+id/questionaire2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/custom_ratingbar_selector"
+                    android:stepSize="1" />
+                        -->
+
+                        <TextView
+                            android:id="@+id/rateing2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/questionaire2"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="0/5"
+                            android:textColor="@color/white" />
+
+                        <RatingBar
+                            android:id="@+id/setRating2"
+                            style="?android:attr/ratingBarStyleIndicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/getRating2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:stepSize="1"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/countText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/getRating2"
+                            android:layout_toRightOf="@+id/setRating2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="vbfhbvfhbvf"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/question3"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/question2"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/question_bg"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/questionaire3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="32dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="2dp"
+                            android:maxLines="2"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <RatingBar
+                            android:id="@+id/getRating3"
+                            style="@style/customRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/questionaire3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="1dp"
+                            android:stepSize="1" />
+
+                        <!--
+                     <RatingBar
+                    android:id="@+id/getRating3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/ratingBarHeigh"
+                    android:layout_below="@+id/questionaire3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/custom_ratingbar_selector"
+                    android:stepSize="1" />
+                        -->
+
+                        <TextView
+                            android:id="@+id/rateing3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/questionaire3"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="0/5"
+                            android:textColor="@color/white" />
+
+                        <RatingBar
+                            android:id="@+id/setRating3"
+                            style="?android:attr/ratingBarStyleIndicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/getRating3"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:stepSize="1"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/countText3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/getRating3"
+                            android:layout_toRightOf="@+id/setRating3"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="vbfhbvfhbvf"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/question4"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/question3"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/question_bg"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/questionaire4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="32dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="2dp"
+                            android:maxLines="2"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <RatingBar
+                            android:id="@+id/getRating4"
+                            style="@style/customRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/questionaire4"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="1dp"
+                            android:stepSize="1" />
+
+                        <!--
+                     <RatingBar
+                    android:id="@+id/getRating3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/ratingBarHeigh"
+                    android:layout_below="@+id/questionaire3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/custom_ratingbar_selector"
+                    android:stepSize="1" />
+                        -->
+
+                        <TextView
+                            android:id="@+id/rateing4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/questionaire4"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="0/5"
+                            android:textColor="@color/white" />
+
+                        <RatingBar
+                            android:id="@+id/setRating4"
+                            style="?android:attr/ratingBarStyleIndicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/getRating4"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:stepSize="0.1"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/countText4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/getRating4"
+                            android:layout_toRightOf="@+id/setRating4"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="vbfhbvfhbvf"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/question5"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/question4"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/question_bg"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/questionaire5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="32dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="2dp"
+                            android:maxLines="2"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <RatingBar
+                            android:id="@+id/getRating5"
+                            style="@style/customRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/questionaire5"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="1dp"
+                            android:stepSize="1" />
+
+                        <!--
+                     <RatingBar
+                    android:id="@+id/getRating3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/ratingBarHeigh"
+                    android:layout_below="@+id/questionaire3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/custom_ratingbar_selector"
+                    android:stepSize="1" />
+                        -->
+
+                        <TextView
+                            android:id="@+id/rateing5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/questionaire5"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="0/5"
+                            android:textColor="@color/white" />
+
+                        <RatingBar
+                            android:id="@+id/setRating5"
+                            style="?android:attr/ratingBarStyleIndicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/getRating5"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:stepSize="0.1"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/countText5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/getRating5"
+                            android:layout_toRightOf="@+id/setRating5"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="vbfhbvfhbvf"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/submitbtnlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/table_Layout2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" >
+
+                    <Button
+                        android:id="@+id/submitbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/submit" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bottam_bar" />
+
+</RelativeLayout>

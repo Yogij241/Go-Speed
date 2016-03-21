@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="Database_onCreate">    	CREATE TABLE USERINFO(ID INTEGER PRIMARY KEY AUTOINCREMENT, user_id TEXT NOT NULL,
+    		email_id TEXT NOT NULL ,user_pwd TEXT NOT NULL ); \n
+    		CREATE TABLE EVENT_CALENDAR(ID INTEGER PRIMARY KEY AUTOINCREMENT, EVENT_TITLE TEXT NOT NULL,
+    		START_DATE TEXT NOT NULL ); \n</string>
+    <string name="Database_onUpgrade">    	DROP TABLE IF EXISTS USERINFO; \n
+    	DROP TABLE IF EXISTS EVENT_CALENDAR; \n</string>
+
+</resources>
